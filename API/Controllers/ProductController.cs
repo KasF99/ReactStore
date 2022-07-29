@@ -10,13 +10,13 @@ namespace API.Controllers
 {
     [ApiController]
     [Route(V)]
-    public class ProductController: ControllerBase
+    public class ProductsController: ControllerBase
     {
         private const string V = "api/[controller]";
     
         private readonly StoreContext _context;
 
-        public ProductController(StoreContext context)
+        public ProductsController(StoreContext context)
         {
             this._context = context;
             
